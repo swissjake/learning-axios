@@ -8,7 +8,7 @@ function App() {
   const getJoke = () => {
       Axios.get("https://official-joke-api.appspot.com/random_joke")
       .then((response) => {
-        setJoke(response.data.setup + "....." + response.data.punchLine);
+        setJoke(response.data.setup + "....." + response.data.punchline);
       })
   }
   return (
